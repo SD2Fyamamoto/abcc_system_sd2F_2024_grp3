@@ -16,9 +16,7 @@
         <div class="search">
             <button class="search-button" onclick="window.location.href='search.html'">
                 <img src="./ASOLI.img/虫眼鏡.png" alt="検索アイコン">
-            </button>
-            
-            
+            </button> 
         </div>
     </div>
 
