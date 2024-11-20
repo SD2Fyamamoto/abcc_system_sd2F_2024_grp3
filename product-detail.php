@@ -28,7 +28,7 @@
     <div>お届け予定日 X月X日</div>
     <script>
         function goToProductList() {
-            window.location.href = "product-list.html";
+            window.location.href = "product-list.php";
         }
     </script>
 </body>
