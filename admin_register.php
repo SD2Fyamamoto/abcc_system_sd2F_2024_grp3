@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>管理者新規登録</h1>
-    <form action="login.html" method="get">
+    <form action="login.php" method="get">
         <label>パスワード</label>
         <input type="password" name="password" required>
         
