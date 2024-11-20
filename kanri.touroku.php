@@ -1,4 +1,4 @@
-//管理者新規登録画面(admin_register.html)のソースコード
+<!--管理者新規登録画面(admin_register.html)のソースコード-->
 <!DOCTYPE html>
 <html lang="ja">
 <head>

@@ -1,4 +1,4 @@
-//利用者新規登録画面(register.html)のソースコード
+<!--利用者新規登録画面(register.html)のソースコード-->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
