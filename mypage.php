@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>マイページ</h1>
-
+<!--qqq-->
     <div class="info-section">
         <h2>アカウント情報の確認</h2>
         <ul class="info-list">
