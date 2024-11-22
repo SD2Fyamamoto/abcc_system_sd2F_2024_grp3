@@ -26,7 +26,7 @@
         
         <!-- 登録ボタンとキャンセルボタン -->
         <button type="submit" class="register">登録</button>
-        <button type="button" class="cancel" onclick="window.location.href='login.html'">キャンセル</button>
+        <button type="button" class="cancel" onclick="window.location.href='login.php'">キャンセル</button>
     </form>
 </body>
 </html>

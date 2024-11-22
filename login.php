@@ -76,6 +76,7 @@ $magazines = $sql->fetchAll(PDO::FETCH_ASSOC);
 </body>
 
 </html>
+<<<<<<< HEAD
 <!--test同期-->
 
 <!--ロリポップアカウント情報
@@ -90,3 +91,5 @@ $magazines = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 
 -->
+=======
+>>>>>>> 39ac47af19dbb9ad98911825532a27b514f3a1fd

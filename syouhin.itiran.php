@@ -11,10 +11,10 @@
     <div class="header">
         <div class="account-info">
             <img src="./ASOLI.img/ジジ.png" alt="アカウント画像">
-            <a href="mypage.html">アカウント</a>
+            <a href="mypage.php">アカウント</a>
         </div>
         <div class="search">
-            <button class="search-button" onclick="window.location.href='search.html'">
+            <button class="search-button" onclick="window.location.href='search.php'">
                 <img src="./ASOLI.img/虫眼鏡.png" alt="検索アイコン">
             </button> 
         </div>
@@ -34,7 +34,7 @@
                 <div class="price">23,555円</div>
             </div>
         </div>
-        <div class="product-item" onclick="window.location.href='product-detail2.html'">
+        <div class="product-item" onclick="window.location.href='product-detail2.php'">
             <img src="./ASOLI.img/椅子スク.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子・ソファー</div>
@@ -124,11 +124,11 @@
 
     <script>
         function goToLogin() {
-            window.location.href = "login.html";
+            window.location.href = "login.php";
         }
 
         function goToProductDetail() {
-            window.location.href = "product-detail.html";
+            window.location.href = "product-detail.php";
         }
     </script>
 </body>

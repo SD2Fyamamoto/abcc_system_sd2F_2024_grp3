@@ -23,6 +23,6 @@
 
     <img src="delivery-man.png" alt="配達員" width="100">
 
-    <button class="button" onclick="window.location.href='product-list.html'">商品一覧へ戻る</button>
+    <button class="button" onclick="window.location.href='product-list.php'">商品一覧へ戻る</button>
 </body>
 </html>
