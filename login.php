@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css"/>
-    <title>中央にフォームとボタンを表示</title>
+    <title>ASOLIログイン</title>
 </head>
 <body>
     <div class="container">
