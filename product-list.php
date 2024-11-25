@@ -26,7 +26,7 @@
     <!-- 商品リスト -->
     <div class="product-list-container">
         <p>商品をタップして詳細を表示</p>
-        <div class="product-item" data-id="001" onclick="goToProductDetail()">
+        <div class="product-item" data-id="001" onclick="goToProductDetail(10001)">
             <img src="./ASOLI.img/ソファスク.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子・ソファー</div>
@@ -34,7 +34,7 @@
                 <div class="price">23,555円</div>
             </div>
         </div>
-        <div class="product-item" data-id="002" onclick="window.location.href='product-detail2.php'">
+        <div class="product-item" data-id="002" onclick="goToProductDetail(10002)">
             <img src="./ASOLI.img/椅子スク.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子・ソファー</div>
@@ -42,7 +42,7 @@
                 <div class="price">1,980円</div>
             </div>
         </div>
-        <div class="product-item" data-id="003" onclick="goToProductDetail()">
+        <div class="product-item" data-id="003" onclick="goToProductDetail(10003)">
             <img src="./ASOLI.img/棚２　保存.avif" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：XXXX</div>
@@ -50,7 +50,7 @@
                 <div class="price">XXXX円</div>
             </div>
         </div>
-        <div class="product-item" data-id="004" onclick="goToProductDetail()">
+        <div class="product-item" data-id="004" onclick="goToProductDetail(10004)">
             <img src="./ASOLI.img/食器スク.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：XXXX</div>
@@ -58,7 +58,7 @@
                 <div class="price">XXXX円</div>
             </div>
         </div>
-        <div class="product-item" data-id="005" onclick="goToProductDetail()">
+        <div class="product-item" data-id="005" onclick="goToProductDetail(10005)">
             <img src="./ASOLI.img/布団　スク.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：XXXX</div>
@@ -66,7 +66,7 @@
                 <div class="price">XXXX円</div>
             </div>
         </div>
-        <div class="product-item" data-id="006" onclick="goToProductDetail()">
+        <div class="product-item" data-id="006" onclick="goToProductDetail(10006)">
             <img src="./ASOLI.img/棚　スク.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：XXXX</div>
@@ -74,7 +74,7 @@
                 <div class="price">XXXX円</div>
             </div>
         </div>
-        <div class="product-item" data-id="007" onclick="goToProductDetail()">
+        <div class="product-item" data-id="007" onclick="goToProductDetail(10007)">
             <img src="./ASOLI.img/布団２　保存.avif" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：XXXX</div>
@@ -82,7 +82,7 @@
                 <div class="price">XXXX円</div>
             </div>
         </div>
-        <div class="product-item"  data-id="008" onclick="goToProductDetail()">
+        <div class="product-item"  data-id="008" onclick="goToProductDetail(10008)">
             <img src="./ASOLI.img/カーテン　保存.avif" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：XXXX</div>
@@ -90,7 +90,7 @@
                 <div class="price">XXXX円</div>
             </div>
         </div>
-        <div class="product-item" data-id="010" onclick="goToProductDetail()">
+        <div class="product-item" data-id="010" onclick="goToProductDetail(10009)">
             <img src="./ASOLI.img/鏡　保存.avif" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：XXXX</div>
@@ -98,7 +98,7 @@
                 <div class="price">XXXX円</div>
             </div>
         </div>
-        <div class="product-item" data-id="011" onclick="goToProductDetail()">
+        <div class="product-item" data-id="011" onclick="goToProductDetail(10010)">
             <img src="./ASOLI.img/机３　保存.jpg" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：XXXX</div>
@@ -106,7 +106,7 @@
                 <div class="price">XXXX円</div>
             </div>
         </div>
-        <div class="product-item" data-id="012" onclick="goToProductDetail()">
+        <div class="product-item" data-id="012" onclick="goToProductDetail(10011)">
             <img src="./ASOLI.img/机　保存.avif" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：XXXX</div>
@@ -130,6 +130,11 @@
         function goToProductDetail() {
             window.location.href = "product-detail.php";
         }
+
+        function goToProductDetail(productId) {
+            window.location.href = `product-detail.php?id=${productId}`;
+        }
+
     </script>
 </body>
 </html>

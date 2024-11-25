@@ -13,12 +13,12 @@
 
     <!-- 商品詳細情報 -->
     <div class="product-detail-container">
-        <img src="./ASOLI.img/ソファスク.png" alt="商品画像" class="product-image">
+    <img id="product-image" src="" alt="商品画像" class="product-image">
         <div class="product-info">
-            <div>カテゴリー：XXXX</div>
-            <div>商品名：XXXX</div>
-            <div>価格：XXXX円</div>
-            <div>商品説明：ここに商品の詳細な説明を入力してください。</div>
+            <div id="product-category">カテゴリー：</div>
+            <div id="product-name">商品名：</div>
+            <div id="product-price">価格：</div>
+            <div id="product-description">商品説明：</div>
         </div>
         <button class="back-button" onclick="goToProductList()">商品一覧画面へ戻る</button>
         <button onclick="window.location.href='purchase.html'">購入する</button>    
@@ -30,6 +30,43 @@
     <script>
         function goToProductList() {
             window.location.href = "product-list.php";
+        }
+        function goToProductList() {
+            window.location.href = "product-list.php";
+        }
+
+        // 商品データ（例）
+        const products = {
+            10001: {
+                category: "椅子・ソファー",
+                name: "革製ソファー",
+                price: "23,555円",
+                description: "とても座り心地の良いソファーです。",
+                image: "./ASOLI.img/ソファスク.png"
+            },
+            10002: {
+                category: "椅子・ソファー",
+                name: "シンプルチェア",
+                price: "1,980円",
+                description: "シンプルなデザインで老若男女おすすめです。",
+                image: "./ASOLI.img/椅子スク.png"
+            }
+        };
+
+        // URLパラメータから商品IDを取得
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        // 商品データを画面に表示
+        if (productId && products[productId]) {
+            const product = products[productId];
+            document.getElementById('product-image').src = product.image;
+            document.getElementById('product-category').textContent = `カテゴリー：${product.category}`;
+            document.getElementById('product-name').textContent = `商品名：${product.name}`;
+            document.getElementById('product-price').textContent = `価格：${product.price}`;
+            document.getElementById('product-description').textContent = `商品説明：${product.description}`;
+        } else {
+            document.body.innerHTML = "<div>商品が見つかりません。</div>";
         }
     </script>
 </body>

@@ -8,21 +8,23 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-}
-h1 {
+ }
+ /* タイトル */
+ h1 {
     font-size: 24px;
     text-align: center;
     margin-bottom: 10px;
-}
-h1::after {
+ }
+ h1::after {
     content: "";
     display: block;
     width: 50px;
     height: 2px;
     background-color: black;
     margin: 5px auto 20px;
-}
-input {
+ }
+ /* 入力欄 */
+ input {
     width: 100%;
     max-width: 300px;
     padding: 10px;
@@ -31,8 +33,9 @@ input {
     background-color: #f0f0f0;
     border: none;
     border-radius: 5px;
-}
-button {
+ }
+ /* ボタン */
+ button {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
@@ -41,15 +44,15 @@ button {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-}
-button.red {
+ }
+ button.red {
     background-color: red;
-}
-button.gray {
+ }
+ button.gray {
     background-color: #6c757d;
-}
-/* ヘッダー */
-.header {
+ }
+ /* ヘッダー */
+ .header {
     width: 100%;
     padding: 10px;
     background-color: #f9f9f9;
@@ -57,72 +60,72 @@ button.gray {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-}
-/* 商品リスト */
-.product-list-container {
+ }
+ /* 商品リスト */
+ .product-list-container {
     width: 90%;
     max-height: 60vh;
     padding: 10px;
     margin-top: 10px;
     border: 1px solid #ccc;
     overflow-y: auto;
-}
-.product-item {
+ }
+ .product-item {
     display: flex;
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
-}
-.product-image {
+ }
+ .product-image {
     width: 80px;
     height: 80px;
     margin-right: 15px;
-}
-.product-info {
+ }
+ .product-info {
     font-size: 14px;
-}
-.product-info .price {
+ }
+ .product-info .price {
     font-weight: bold;
-}
-/* 商品詳細 */
-.product-detail-container {
+ }
+ /* 商品詳細 */
+ .product-detail-container {
     width: 90%;
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ccc;
-}
-.product-detail-container img {
+ }
+ .product-detail-container img {
     width: 100px;
     height: 100px;
     margin: 0 auto 15px;
     display: block;
-}
-/* カテゴリ一覧 */
-.category-container {
+ }
+ /* カテゴリ一覧 */
+ .category-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     width: 100%;
     max-width: 300px;
     margin-bottom: 20px;
-}
-.category {
+ }
+ .category {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-.category img {
+ }
+ .category img {
     width: 80px;
     height: auto;
     margin-bottom: 10px;
-}
-.category button {
+ }
+ .category button {
     width: 100px;
-}
-/* フッター */
-.footer {
+ }
+ /* フッター */
+ .footer {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -131,27 +134,27 @@ button.gray {
     bottom: 0;
     background-color: #fff;
     border-top: 1px solid #ccc;
-}
-/* セクション */
-.info-section, .order-section {
+ }
+ /* セクション */
+ .info-section, .order-section {
     width: 100%;
     max-width: 300px;
     margin-bottom: 20px;
-}
-.info-section h2, .order-section h2 {
+ }
+ .info-section h2, .order-section h2 {
     font-size: 18px;
     border-bottom: 1px solid #000;
     padding-bottom: 5px;
     margin-bottom: 10px;
-}
-.info-list, .order-list {
+ }
+ .info-list, .order-list {
     font-size: 16px;
     line-height: 1.5;
-}
-/* 注意書き */
-.note {
+ }
+ /* 注意書き */
+ .note {
     font-size: 14px;
     color: gray;
     text-align: center;
     margin-top: 10px;
-} 
+ } 
