@@ -1,4 +1,5 @@
 <!--ログイン画面のソースコード-->
+<link rel="stylesheet" href="./CSS/style.css"/>
 <?php
 session_start();
 require 'db_config.php'; // データベース接続ファイル
