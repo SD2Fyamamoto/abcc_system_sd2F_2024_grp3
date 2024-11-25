@@ -1,4 +1,5 @@
 <!--商品登録画面(admin_register.html)のソースコード-->
+<link rel="stylesheet" href="./CSS/style.css"/>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
