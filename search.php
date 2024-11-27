@@ -1,4 +1,4 @@
-//商品検索画面(search.html)のソースコード
+<!--商品検索画面(search.html)のソースコード-->
 <!DOCTYPE html>
 <html lang="ja">
 <head>

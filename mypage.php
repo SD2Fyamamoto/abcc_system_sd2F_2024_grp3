@@ -1,4 +1,4 @@
-//マイページ(mypage.html)のソースコード
+<!--マイページ(mypage.html)のソースコード-->
 <link rel="stylesheet" href="./CSS/style.css"/>
 <!DOCTYPE html>
 <html lang="ja">

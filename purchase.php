@@ -1,4 +1,4 @@
-//商品購入画面(purchase.html)のソースコード
+<!--商品購入画面(purchase.html)のソースコード-->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
