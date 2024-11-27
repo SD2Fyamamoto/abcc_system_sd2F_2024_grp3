@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 
 </html>
-<<<<<<< HEAD
+
 <!--test同期-->
 
 <!--ロリポップアカウント情報
@@ -77,5 +77,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 -->
-=======
->>>>>>> 39ac47af19dbb9ad98911825532a27b514f3a1fd
