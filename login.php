@@ -1,81 +1,42 @@
 <?php
 session_start();
-require 'login.php';
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // 入力値を取得
-    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-    if ($email && $password) {
-        try {
-            // ユーザーを検索
-            $stmt = $pdo->prepare('SELECT id, password FROM users WHERE email = :email');
-            $stmt->bindValue(':email', $email, PDO::PARAM_STR);
-            $stmt->execute();
-            $user = $stmt->fetch();
-            if ($user && password_verify($password, $user['password'])) {
-                // セッションにユーザー情報を保存
-                $_SESSION['user_id'] = $user['id'];
-                header('Location: mypage.php'); // マイページにリダイレクト
-                exit;
-            } else {
-                $error = 'メールアドレスまたはパスワードが間違っています。';
-            }
-        } catch (Exception $e) {
-            $error = 'エラーが発生しました: ' . $e->getMessage();
-        }
-    } else {
-        $error = 'すべての項目を入力してください。';
-    }
- }
 //データベースに接続
 try {
-   $pdo = new PDO('mysql:host=mysql305.phy.lolipop.lan;
-   dbname=LAA1557234-php2024;charset=utf8',
-   'LAA1557234',
-   'Pass1202' ); // 適切なユーザー名とパスワードを入力
-} catch (PDOException $e) {
-   echo "データベース接続失敗: " . $e->getMessage();
-   exit();
+    $pdo = new PDO('mysql:host=mysql305.phy.lolipop.lan;
+    dbname=LAA1557234-php2024;charset=utf8',
+    'LAA1557234',
+    'Pass1202' ); // 適切なユーザー名とパスワードを入力
+ } catch (PDOException $e) {
+    echo "データベース接続失敗: " . $e->getMessage();
+    exit();
+ }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+   $email = $_POST['email'];
+   $password = $_POST['password'];
+   // ユーザーをデータベースから取得
+   $stmt = $pdo->prepare('SELECT id, username, password, role FROM users WHERE username = ?');
+   $stmt->execute([$username]);
+   $user = $stmt->fetch(PDO::FETCH_ASSOC);
+   if ($user && password_verify($password, $user['password'])) {
+       // ログイン成功、セッションに情報を保存
+       $_SESSION['user_id'] = $user['id'];
+       $_SESSION['username'] = $user['username'];
+       $_SESSION['role'] = $user['role'];
+       // 役割に応じて遷移
+       if ($user['role'] === 'admin') {
+           header('Location: product_list.php');
+       } else {
+           header('Location: product_list2.php');
+       }
+       exit;
+   } else {
+       echo 'ログイン失敗: ユーザー名またはパスワードが間違っています。';
+   }
 }
-// データベースからデータを取得
-
-//アカウント情報の判別
-
 
 ?>
 <!--ログイン画面のソースコード-->
 <link rel="stylesheet" href="./CSS/style.css"/>
-<?php
-session_start();
-require 'db_config.php'; // データベース接続ファイル
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-   // 入力値を取得
-   $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-   $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-   if ($email && $password) {
-       try {
-           // ユーザーを検索
-           $stmt = $pdo->prepare('SELECT id, password FROM users WHERE email = :email');
-           $stmt->bindValue(':email', $email, PDO::PARAM_STR);
-           $stmt->execute();
-           $user = $stmt->fetch();
-           if ($user && password_verify($password, $user['password'])) {
-               // セッションにユーザー情報を保存
-               $_SESSION['user_id'] = $user['id'];
-               header('Location: mypage.php'); // マイページにリダイレクト
-               exit;
-           } else {
-               $error = 'メールアドレスまたはパスワードが間違っています。';
-           }
-       } catch (Exception $e) {
-           $error = 'エラーが発生しました: ' . $e->getMessage();
-       }
-   } else {
-       $error = 'すべての項目を入力してください。';
-   }
-}
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -84,12 +45,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="./CSS/style.css"/>
     <title>ASOLIログイン</title>
 </head>
-<?php
-
-$sql = $pdo->prepare('SELECT * FROM magazine');
-$sql->execute();
-$magazines = $sql->fetchAll(PDO::FETCH_ASSOC);
-?>
 <body>
     <div class="container">
         <div>メールアドレス・または管理者ID</div>
