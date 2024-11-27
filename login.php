@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="container">
-        <div>メールアドレス・または管理者ID</div>
+        <div>メールアドレス</div>
         <input type="text" placeholder="入力してください">
         
         <div>パスワード</div>
