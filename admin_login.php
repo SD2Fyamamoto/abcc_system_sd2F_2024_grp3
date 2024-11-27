@@ -47,14 +47,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="container">
-        <div>メールアドレス・または管理者ID</div>
+        <div>管理者ID</div>
         <input type="text" placeholder="入力してください">
         
         <div>パスワード</div>
         <input type="password" placeholder="パスワードを入力してください">
         
-        <button class="button login-button" one-click="product-list.php">ログイン</button>
-        <button class="button register-button">新規登録</button>
+        <button class="button login-button" one-click="product-list2.php">ログイン</button>
+        <button class="button admin-register-button">管理者新規登録</button>
     </div>
 </body>
 
