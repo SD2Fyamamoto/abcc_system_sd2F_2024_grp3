@@ -10,11 +10,11 @@
     <!-- Header -->
     <div class="header">
         <div class="account-info">
-            <img src="./ASOLI.img/neko.png" alt="アカウント画像">
-            <a href="mypage.php">アカウント</a>
+            <img src="./ASOLI.img/neko2.png" alt="アカウント画像">
+            <a href="mypage2.php">アカウント</a>
         </div>
         <div class="search">
-            <button class="search-button" onclick="window.location.href='search.php'">
+            <button class="search-button" onclick="window.location.href='search2.php'">
                 <img src="./ASOLI.img/虫眼鏡.png" alt="検索アイコン">
             </button> 
         </div>
@@ -119,22 +119,17 @@
     <!-- フッターボタン -->
     <div class="footer">
         <button onclick="goToLogin()">ログイン画面へ</button>
-        <button onclick="window.location.href='category_select.php'">カテゴリーで絞る</button>
+        <button onclick="window.location.href='category_select2.php'">カテゴリーで絞る</button>
     </div>
 
     <script>
         function goToLogin() {
-            window.location.href = "login.php";
+            window.location.href = "admin_login.php";
         }
 
         function goToProductDetail() {
-            window.location.href = "product-detail.php";
+            window.location.href = "product-detail2.php";
         }
-
-        function goToProductDetail(productId) {
-            window.location.href = `product-detail.php?id=${productId}`;
-        }
-
     </script>
 </body>
 </html>
