@@ -2,10 +2,10 @@
 session_start();
 //データベースに接続
 try {
-    $pdo = new PDO('mysql:host=mysql305.phy.lolipop.lan;
-    dbname=LAA1557234-php2024;charset=utf8',
-    'LAA1557234',
-    'Pass1202' ); // 適切なユーザー名とパスワードを入力
+    //$pdo = new PDO('mysql:host=mysql305.phy.lolipop.lan;
+    //dbname=LAA1557201-php2024;charset=utf8',
+    //'LAA1557201',
+    //'Pass0107' ); // 適切なユーザー名とパスワードを入力
  } catch (PDOException $e) {
     echo "データベース接続失敗: " . $e->getMessage();
     exit();
