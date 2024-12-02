@@ -7,10 +7,10 @@
 </head>
 <body>
 <h1>ログイン</h1>
-<form action="admin_login_process.php" method="POST">
+<form action="login_process.php" method="POST">
 <div>
-<label for="manager_id">メールアドレス</label>
-<input type="text" id="manager_id" name="manager_id" maxlength="7" pattern="\d{7}" required>
+<label for="mail">メールアドレス</label>
+<input type="email" id="mail" name="mail" required>
 </div>
 <div>
 <label for="password">パスワード</label>

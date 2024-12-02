@@ -12,26 +12,30 @@ try {
    die("データベース接続失敗: " . $e->getMessage());
 }
 // フォームからの入力値を取得
-$manager_id = $_POST['manager_id'] ?? '';
-$m_password = $_POST['password'] ?? '';
-// 入力値のバリデーション
-if (!preg_match('/^\d{7}$/', $manager_id) || !preg_match('/^\d{7}$/', $m_password)) {
-   die("不正な入力です。");
+$mail = $_POST['mail'] ?? '';
+$password = $_POST['password'] ?? '';
+// メールアドレス形式のバリデーション (汎用的な形式)
+if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+   die("メールアドレスの形式が正しくありません。");
+}
+// パスワードの形式チェック (数字7文字)
+if (!preg_match('/^\d{7}$/', $password)) {
+   die("パスワードは7桁の数字で入力してください。");
 }
 // データベース照合
-$sql = "SELECT * FROM asoli_manager WHERE manager_id = :manager_id AND m_password = :m_password";
+$sql = "SELECT * FROM asoli_user WHERE mail = :mail AND password = :password";
 $stmt = $pdo->prepare($sql);
-$stmt->bindValue(':manager_id', $manager_id, PDO::PARAM_STR);
-$stmt->bindValue(':m_password', $m_password, PDO::PARAM_STR);
+$stmt->bindValue(':mail', $mail, PDO::PARAM_STR);
+$stmt->bindValue(':password', $password, PDO::PARAM_STR);
 $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($user) {
    // ログイン成功
-   $_SESSION['manager_user'] = $user['m_user']; // ユーザー名をセッションに保存
-   header('Location: product-list1.php');
+   $_SESSION['user_name'] = $user['name']; // ユーザー名をセッションに保存
+   header('Location: product-list.php');
    exit;
 } else {
    // ログイン失敗
-   echo "管理者IDまたはパスワードが間違っています。";
+   echo "メールアドレスまたはパスワードが間違っています。";
 }
 ?>
