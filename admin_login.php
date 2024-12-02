@@ -6,17 +6,20 @@
 <title>管理者ログイン</title>
 </head>
 <body>
+<div class="h1">
 <h1>管理者ログイン</h1>
 <form action="admin_login_process.php" method="POST">
-<div>
+<div class="input">
 <label for="manager_id">管理者ID</label>
 <input type="text" id="manager_id" name="manager_id" maxlength="7" pattern="\d{7}" required>
 </div>
-<div>
+<div class="input">
 <label for="password">パスワード</label>
 <input type="password" id="password" name="password" maxlength="7" pattern="\d{7}" required>
 </div>
+<div class="button">
 <button type="submit">ログイン</button>
+</div>
 </form>
 </body>
 </html>
