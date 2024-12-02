@@ -1,3 +1,45 @@
+<<<<<<< HEAD
+<?php
+session_start();
+//データベースに接続
+try {
+    //$pdo = new PDO('mysql:host=mysql305.phy.lolipop.lan;
+    //dbname=LAA1557201-php2024;charset=utf8',
+    //'LAA1557201',
+    //'Pass0107' ); // 適切なユーザー名とパスワードを入力
+ } catch (PDOException $e) {
+    echo "データベース接続失敗: " . $e->getMessage();
+    exit();
+ }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+   $email = $_POST['email'];
+   $password = $_POST['password'];
+   // ユーザーをデータベースから取得
+   $stmt = $pdo->prepare('SELECT id, username, password, role FROM users WHERE username = ?');
+   $stmt->execute([$username]);
+   $user = $stmt->fetch(PDO::FETCH_ASSOC);
+   if ($user && password_verify($password, $user['password'])) {
+       // ログイン成功、セッションに情報を保存
+       $_SESSION['user_id'] = $user['id'];
+       $_SESSION['username'] = $user['username'];
+       $_SESSION['role'] = $user['role'];
+       // 役割に応じて遷移
+       if ($user['role'] === 'admin') {
+           header('Location: product_list.php');
+       } else {
+           header('Location: product_list2.php');
+       }
+       exit;
+   } else {
+       echo 'ログイン失敗: ユーザー名またはパスワードが間違っています。';
+   }
+}
+
+?>
+<!--ログイン画面のソースコード-->
+<link rel="stylesheet" href="./CSS/style.css"/>
+=======
+>>>>>>> dfef84af2d5d1700dee77cf413b332c3ea737d1b
 <!DOCTYPE html>
 <html lang="ja">
 <head>
