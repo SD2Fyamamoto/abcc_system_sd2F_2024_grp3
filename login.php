@@ -7,17 +7,21 @@
 <title>ログイン</title>
 </head>
 <body>
+<div class="h1">
 <h1>ログイン</h1>
 <form action="login_process.php" method="POST">
-<div>
+</div>
+<div class="input">
 <label for="mail">メールアドレス</label>
 <input type="email" id="mail" name="mail" required>
 </div>
-<div>
+<div class="input">
 <label for="password">パスワード</label>
 <input type="password" id="password" name="password" maxlength="7" pattern="\d{7}" required>
 </div>
+<div class="button">
 <button type="submit">ログイン</button>
+</div>
 </form>
 </body>
 </html>
