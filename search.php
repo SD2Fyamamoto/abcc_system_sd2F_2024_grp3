@@ -10,13 +10,31 @@
 </head>
 <body>
     <h1>商品検索</h1>
-
-    <label for="product-name">商品名を入力</label>
-    <input type="text" id="product-name" placeholder="商品名を入力">
-
-    <label for="category">カテゴリを入力</label>
-    <input type="text" id="category" placeholder="カテゴリを入力">
-
+    <br>
+    <h3>カテゴリを選択してください</h3>
+    <br>
+    <form action="product-list-category.php" method="post">
+        <div>
+            <label>
+                <input type="radio" name="category" value="ソファー・椅子" required>ソファー・椅子</label>
+        </div>
+        <div>
+            <label>
+                <input type="radio" name="category" value="ベッド" required>ベッド</label>
+        </div>
+        <div>
+            <label>
+                <input type="radio" name="category" value="机" required>机</label>
+        </div>
+        <div>
+            <label>
+                <input type="radio" name="category" value="棚" required>棚</label>
+        </div>
+        <div>
+            <label>
+                <input type="radio" name="category" value="その他" required>その他</label>
+        </div>
+    </form>
     <div class="buttons-container">
         <button class="button" onclick="window.location.href='product-list.php'">検索</button>
         <button class="button" onclick="window.location.href='product-list.php'">戻る</button>
