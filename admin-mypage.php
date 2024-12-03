@@ -15,10 +15,10 @@
     </div>
     <h1>マイページ</h1>
 
-    <button class="button" onclick="window.location.href='user-list.html'">ユーザー一覧</button>
-    <button class="button" onclick="window.location.href='product-register.html'">商品登録</button>
-    <button class="button" onclick="window.location.href='login.html'">ログアウト</button>
-    <button class="button" onclick="window.location.href='product-list.html'">商品一覧へ戻る</button>
+    <button class="button" onclick="window.location.href='user-list.php'">ユーザー一覧</button>
+    <button class="button" onclick="window.location.href='product-register.php'">商品登録</button>
+    <button class="button" onclick="window.location.href='admin_login.php'">ログアウト</button>
+    <button class="button" onclick="window.location.href='product-list.php'">商品一覧へ戻る</button>
 </body>
 </html>
   

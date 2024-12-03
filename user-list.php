@@ -12,9 +12,9 @@
     <div style="background-color: lightgray; padding: 10px;">
         <p>ユーザー一覧</p>
         <ul>
-            <li>aso01@gmail.com</li>
-            <li>aso02@gmail.com</li>
-            <li>aso03@gmail.com</li>
+            <li>1111111@s.asojuku.ac.jp</li>
+            <li>2222222@s.asojuku.ac.jp</li>
+            <li>1234567@gmail.com</li>
         </ul>
     </div>
     <button onclick="location.href='admin-mypage.html'" style="background-color: blue; color: white; border: none; padding: 10px 20px; margin-top: 20px;">マイページに戻る</button>
