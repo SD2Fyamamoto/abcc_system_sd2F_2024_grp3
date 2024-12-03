@@ -1,10 +1,9 @@
-<!--商品検索画面(search.html)のソースコード-->
+//商品検索画面(search.html)のソースコード
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css"/>
     <title>商品検索</title>
     
 </head>
@@ -18,8 +17,8 @@
     <input type="text" id="category" placeholder="カテゴリを入力">
 
     <div class="buttons-container">
-        <button class="button" onclick="window.location.href='product-list.php'">検索</button>
-        <button class="button" onclick="window.location.href='product-list.php'">戻る</button>
+        <button class="button" onclick="window.location.href='product-list.html'">検索</button>
+        <button class="button" onclick="window.location.href='product-list.html'">戻る</button>
     </div>
 </body>
 </html>

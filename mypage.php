@@ -1,16 +1,15 @@
-<link rel="stylesheet" href="./CSS/style.css"/>
+//マイページ(mypage.html)のソースコード
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css"/>
     <title>マイページ</title>
 
 </head>
 <body>
     <h1>マイページ</h1>
-<!--qqq-->
+
     <div class="info-section">
         <h2>アカウント情報の確認</h2>
         <ul class="info-list">
@@ -33,9 +32,9 @@
     </div>
 
     <div class="buttons-container">
-        <button class="button" onclick="window.location.href='login.php'">ログアウト</button>
-        <button class="button red" onclick="window.location.href='login.php'">アカウント削除</button>
-        <button class="button" onclick="window.location.href='product-list.php'">戻る</button>
+        <button class="button" onclick="window.location.href='login.html'">ログアウト</button>
+        <button class="button red" onclick="window.location.href='login.html'">アカウント削除</button>
+        <button class="button" onclick="window.location.href='product-list.html'">戻る</button>
     </div>
 </body>
 </html>

@@ -11,16 +11,16 @@
 <h1>ログイン</h1>
 <form action="login_process.php" method="POST">
 </div>
-<div class="input">
+<div>
 <label for="mail">メールアドレス</label>
-<input type="email" id="mail" name="mail" required>
+<input class="input" type="email" id="mail" name="mail" required>
 </div>
-<div class="input">
+<div>
 <label for="password">パスワード</label>
-<input type="password" id="password" name="password" maxlength="7" pattern="\d{7}" required>
+<input class="input" type="password" id="password" name="password" maxlength="7" pattern="\d{7}" required>
 </div>
-<div class="button">
-<button type="submit">ログイン</button>
+<div>
+<button class="button" type="submit">ログイン</button>
 </div>
 </form>
 </body>

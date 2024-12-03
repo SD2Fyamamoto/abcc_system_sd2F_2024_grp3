@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 <?php
 session_start();
 //データベースに接続
 try {
-    //$pdo = new PDO('mysql:host=mysql305.phy.lolipop.lan;
-    //dbname=LAA1557201-php2024;charset=utf8',
-    //'LAA1557201',
-    //'Pass0107' ); // 適切なユーザー名とパスワードを入力
+    $pdo = new PDO('mysql:host=mysql305.phy.lolipop.lan;
+    dbname=LAA1557212-php2024;charset=utf8',
+    'LAA1557212',
+    'Pass0521' ); // 適切なユーザー名とパスワードを入力
  } catch (PDOException $e) {
     echo "データベース接続失敗: " . $e->getMessage();
     exit();
@@ -38,31 +37,47 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 <!--ログイン画面のソースコード-->
 <link rel="stylesheet" href="./CSS/style.css"/>
-=======
->>>>>>> dfef84af2d5d1700dee77cf413b332c3ea737d1b
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>管理者ログイン</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css"/>
+    <title>ASOLIログイン</title>
 </head>
 <body>
+<<<<<<< HEAD
+<div class="h1">
 <h1>管理者ログイン</h1>
 <form action="admin_login_process.php" method="POST">
-<div>
+<div class="input">
 <label for="manager_id">管理者ID</label>
 <input type="text" id="manager_id" name="manager_id" maxlength="7" pattern="\d{7}" required>
 </div>
-<div>
+<div class="input">
 <label for="password">パスワード</label>
 <input type="password" id="password" name="password" maxlength="7" pattern="\d{7}" required>
 </div>
+<div class="button">
 <button type="submit">ログイン</button>
+</div>
 </form>
+=======
+    <div class="container">
+        <div>管理者ID</div>
+        <input type="text" placeholder="入力してください">
+        
+        <div>パスワード</div>
+        <input type="password" placeholder="パスワードを入力してください">
+        
+        <button class="button login-button" one-click="product-list2.php">ログイン</button>
+        <button class="button admin-register-button">管理者新規登録</button>
+    </div>
+>>>>>>> 84c6fb6dbb600e0af5632763302cc34baf7d49f1
 </body>
-</html>
 
+</html>
+<!--あ-->
 <!--test同期-->
 
 <!--ロリポップアカウント情報
