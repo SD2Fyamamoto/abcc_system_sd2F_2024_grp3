@@ -21,7 +21,7 @@
             <div id="product-description">商品説明：</div>
         </div>
         <button class="back-button" onclick="goToProductList()">商品一覧画面へ戻る</button>
-        <button onclick="window.location.href='purchase.html'">購入する</button>    
+        <button onclick="window.location.href='purchase.php'">購入する</button>    
     </div>
     <br>
     <div>お届け先：福岡県福岡市博多区 博多駅南1-11-11</div>

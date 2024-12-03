@@ -7,6 +7,9 @@
 <title>ログイン</title>
 </head>
 <body>
+    <div class="asoli">
+        ASOLI
+    </div>
 <div class="h1">
 <h1>ログイン</h1>
 <form action="login_process.php" method="POST">

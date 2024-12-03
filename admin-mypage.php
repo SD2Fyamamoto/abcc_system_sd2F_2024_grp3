@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="profile">
-        <img src="./ASOLI.img/ジジ.png" alt="アカウント画像">
+        <img src="./ASOLI.img/neko.png" alt="アカウント画像">
         <span>アカウント名</span>
     </div>
     <h1>マイページ</h1>
