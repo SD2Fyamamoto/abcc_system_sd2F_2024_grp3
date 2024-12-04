@@ -46,7 +46,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>ASOLIログイン</title>
 </head>
 <body>
-<<<<<<< HEAD
 <div class="h1">
 <h1>管理者ログイン</h1>
 <form action="admin_login_process.php" method="POST">
@@ -62,7 +61,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <button type="submit">ログイン</button>
 </div>
 </form>
-=======
     <div class="container">
         <div>管理者ID</div>
         <input type="text" placeholder="入力してください">
@@ -73,7 +71,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button class="button login-button" one-click="product-list2.php">ログイン</button>
         <button class="button admin-register-button">管理者新規登録</button>
     </div>
->>>>>>> 84c6fb6dbb600e0af5632763302cc34baf7d49f1
 </body>
 
 </html>

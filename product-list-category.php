@@ -12,17 +12,19 @@ try {
    die("データベース接続失敗: " . $e->getMessage());
 }
 // カテゴリIDを取得
-if (isset($_SESSION['category_id'])) {
-    echo "カテゴリが選択されていません。";
-    exit;
-   $category_id = $_SESSION['category_id'];
-   // 商品を取得
-   $stmt = $pdo->prepare("SELECT * FROM products WHERE category_id = :category_id");
-   $stmt->bindParam(':category_id', $category_id, PDO::PARAM_INT);
+if (!isset($_SESSION['category_id'])) { // セッションにカテゴリIDがない場合
+   echo "カテゴリが選択されていません。";
+   exit;
+}
+$category_id = $_SESSION['category_id']; // セッションからカテゴリIDを取得
+// 商品を取得
+$stmt = $pdo->prepare("SELECT * FROM products WHERE category_id = :category_id");
+$stmt->bindParam(':category_id', $category_id, PDO::PARAM_INT);
+try {
    $stmt->execute();
-   $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
-} else {
-   die("カテゴリが選択されていません。");
+   $products = $stmt->fetchAll(PDO::FETCH_ASSOC); // 商品リストを取得
+} catch (PDOException $e) {
+   die("データベースクエリ失敗: " . $e->getMessage());
 }
 ?>
 <!DOCTYPE html>
@@ -31,10 +33,22 @@ if (isset($_SESSION['category_id'])) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>商品一覧 - カテゴリ別</title>
+<style>
+   .product-list {
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+   }
+   .product-item {
+       border: 1px solid #ccc;
+       padding: 10px;
+       border-radius: 5px;
+   }
+</style>
 </head>
 <body>
 <h1>商品一覧</h1>
-<?php if (!empty($products)): ?>
+<?php if (!empty($products)): ?> <!-- 商品がある場合 -->
 <div class="product-list">
 <?php foreach ($products as $product): ?>
 <div class="product-item">
@@ -44,7 +58,7 @@ if (isset($_SESSION['category_id'])) {
 </div>
 <?php endforeach; ?>
 </div>
-<?php else: ?>
+<?php else: ?> <!-- 商品がない場合 -->
 <p>選択されたカテゴリには商品がありません。</p>
 <?php endif; ?>
 </body>
