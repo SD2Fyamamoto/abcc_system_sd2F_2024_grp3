@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./CSS/style.css"/>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -7,7 +8,7 @@
 </head>
 <body>
     <h1>商品登録</h1>
-    <form action="register-complete.html" method="post">
+    <form action="register-complete.php" method="post">
         <p>商品名を入力</p>
         <input type="text" name="product_name" style="width: 100%; padding: 10px; margin-bottom: 10px;">
 
