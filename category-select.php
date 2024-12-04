@@ -1,3 +1,15 @@
+<?php
+session_start();
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+   if (isset($_POST['category_id'])) {
+       $_SESSION['category_id'] = $_POST['category_id'];
+       header('Location: product-list-category.php');
+       exit;
+   } else {
+       echo "カテゴリが選択されていません。";
+   }
+}
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
