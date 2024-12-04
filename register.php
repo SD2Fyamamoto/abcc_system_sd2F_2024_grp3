@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css"/>
     <title>新規登録</title>
 </head>
 <body>
@@ -27,7 +26,7 @@
         
         <!-- 登録ボタンとキャンセルボタン -->
         <button type="submit" class="register">登録</button>
-        <button type="button" class="cancel" onclick="window.location.href='login.php'">キャンセル</button>
+        <button type="button" class="cancel" onclick="window.location.href='login.html'">キャンセル</button>
     </form>
 </body>
 </html>
