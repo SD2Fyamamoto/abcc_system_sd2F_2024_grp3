@@ -33,8 +33,7 @@
 
     <div class="buttons-container">
         <button class="button" onclick="window.location.href='login.php'">ログアウト</button>
-        <button class="button red" onclick="window.location.href='login.php'">アカウント削除</button>
-        <button class="button" onclick="window.location.href='product-list.php'">戻る</button>
+        <button class="button" onclick="window.location.href='product_list.php'">戻る</button>
     </div>
 </body>
 </html>

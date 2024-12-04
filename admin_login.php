@@ -61,16 +61,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <button type="submit">ログイン</button>
 </div>
 </form>
-    <div class="container">
-        <div>管理者ID</div>
-        <input type="text" placeholder="入力してください">
-        
-        <div>パスワード</div>
-        <input type="password" placeholder="パスワードを入力してください">
-        
-        <button class="button login-button" one-click="product-list2.php">ログイン</button>
-        <button class="button admin-register-button">管理者新規登録</button>
-    </div>
 </body>
 
 </html>
