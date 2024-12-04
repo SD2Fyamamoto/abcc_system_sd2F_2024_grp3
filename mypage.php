@@ -24,7 +24,7 @@
         <h2>注文履歴</h2>
         <p>注文日時: XX年XX月XX日 XX:XX:XX</p>
         <div class="order-list">
-            <img src="cart.png" alt="商品画像" width="50">
+            <img src="./ASOLI.img/ソファスク.png" alt="商品画像" width="50">
             <p>カテゴリー: XXXX</p>
             <p>商品について: 〜〜〜〜〜〜</p>
             <p>XXXX円</p>
@@ -32,9 +32,9 @@
     </div>
 
     <div class="buttons-container">
-        <button class="button" onclick="window.location.href='login.html'">ログアウト</button>
-        <button class="button red" onclick="window.location.href='login.html'">アカウント削除</button>
-        <button class="button" onclick="window.location.href='product-list.html'">戻る</button>
+        <button class="button" onclick="window.location.href='login.php'">ログアウト</button>
+        <button class="button red" onclick="window.location.href='login.php'">アカウント削除</button>
+        <button class="button" onclick="window.location.href='product-list.php'">戻る</button>
     </div>
 </body>
 </html>
