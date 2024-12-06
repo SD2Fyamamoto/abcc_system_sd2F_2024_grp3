@@ -28,19 +28,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
    // フォームデータの取得とバリデーション
 
-   $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+   $email = filter_input(INPUT_POST, 'email');
 
    $password = $_POST['password'];
 
-   $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
+   $username = filter_input(INPUT_POST, 'name');
 
-   $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
+   $phone = filter_input(INPUT_POST, 'tell');
 
-   $address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
+   $address = filter_input(INPUT_POST, 'address');
 
    // 必須項目のチェック
 
-   if (!$email || !$password || !$username || !$phone || !$address) {
+   if (!$mail || !$password || !$name || !$tell || !$address) {
 
        $error_message = "全ての項目を正しく入力してください。";
 
@@ -52,9 +52,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
        // データベースへの登録
 
-       $sql = "INSERT INTO asoli_user (email, password, username, phone, address) 
+       $sql = "INSERT INTO asoli_user (mail, password, name, tell, address) 
 
-               VALUES (:email, :password, :username, :phone, :address)";
+               VALUES (:mail, :password, :name, :tell, :address)";
 
        $stmt = $pdo->prepare($sql);
 
@@ -62,13 +62,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
            $stmt->execute([
 
-               ':email' => $email,
+               ':email' => $mail,
 
-               ':password' => $hashed_password,
+               ':password' => $password,
 
-               ':username' => $username,
+               ':username' => $name,
 
-               ':phone' => $phone,
+               ':phone' => $tell,
 
                ':address' => $address
 
@@ -109,13 +109,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php endif; ?>
 <form action="register.php" method="post">
 <label>メールアドレス</label>
-<input type="email" name="email" required>
+<input type="email" name="mail" required>
 <label>パスワード</label>
 <input type="password" name="password" required>
 <label>ユーザー名</label>
-<input type="text" name="username" required>
+<input type="text" name="name" required>
 <label>電話番号</label>
-<input type="tel" name="phone" required>
+<input type="tel" name="tell" required>
 <label>住所</label>
 <input type="text" name="address" required>
 <!-- 登録ボタンとキャンセルボタン -->
