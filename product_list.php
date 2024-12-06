@@ -2,20 +2,20 @@
 
 // データベース接続情報
 
-$host = 'localhost';
+$host = 'mysql:host=mysql304.phy.lolipop.lan';
 
-$dbname = 'your_database';
+$dbname = 'dbname=LAA1557215-php2024';
 
-$username = 'your_username';
+$username = 'LAA1557215';
 
-$password = 'your_password';
+$password = 'Pass0308';
 
 try {
 
     // データベース接続
 
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-
+    $pdo=new PDO('mysql:host=mysql304.phy.lolipop.lan;
+    dbname=LAA1557215-php2024;charset=utf8','LAA1557215','Pass0308');
 } catch (PDOException $e) {
 
     echo "データベース接続エラー: " . $e->getMessage();
