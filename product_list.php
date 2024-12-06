@@ -67,8 +67,8 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 <!-- フッターボタン -->
 <div class="footer">
-<button onclick="goToLogin()">ログイン画面へ</button>
-<button onclick="window.location.href='category_select.php'">カテゴリーで絞る</button>
+<button onclick="window.location.href='login.php'">ログイン画面へ</button>
+<button onclick="window.location.href='category-select.php'">カテゴリーで絞る</button>
 </div>
 <script>
 

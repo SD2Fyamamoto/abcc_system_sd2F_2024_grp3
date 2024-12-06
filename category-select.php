@@ -65,12 +65,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['category_id'])) {
 <br>
 <h3>カテゴリを選択してください</h3>
 <br>
-<form action="product-list-category.php" method="post">
-<div class="radio-container">
+<form action="select-list1.php">
+<!--<div class="radio-container">-->
 <div class="radio-item">
 <input type="radio" id="category-20001" name="category_id" value="20001" required>
 <label for="category-20001">ソファー・椅子</label>
 </div>
+</form>
+<form action="select-list2.php" method="post">
 <div class="radio-item">
 <input type="radio" id="category-20002" name="category_id" value="20002">
 <label for="category-20002">ベッド</label>
@@ -87,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['category_id'])) {
 <input type="radio" id="category-20005" name="category_id" value="20005">
 <label for="category-20005">その他</label>
 </div>
-</div>
+<!--</div>-->
 <div class="buttons-container">
 <button type="submit" class="button">検索</button>
 <button type="button" class="button" onclick="window.location.href='product-list.php'">戻る</button>
