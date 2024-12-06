@@ -28,13 +28,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
    // フォームデータの取得とバリデーション
 
-   $email = filter_input(INPUT_POST, 'email');
+   $mail = filter_input(INPUT_POST, 'mail');
 
    $password = $_POST['password'];
 
-   $username = filter_input(INPUT_POST, 'name');
+   $name = filter_input(INPUT_POST, 'name');
 
-   $phone = filter_input(INPUT_POST, 'tell');
+   $tell = filter_input(INPUT_POST, 'tell');
 
    $address = filter_input(INPUT_POST, 'address');
 
