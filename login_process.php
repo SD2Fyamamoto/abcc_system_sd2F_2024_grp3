@@ -32,7 +32,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($user) {
    // ログイン成功
    $_SESSION['user_name'] = $user['name']; // ユーザー名をセッションに保存
-   header('Location: product-list.php');
+   header('Location: product_list.php');
    exit;
 } else {
    // ログイン失敗
