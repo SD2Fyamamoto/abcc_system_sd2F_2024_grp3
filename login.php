@@ -24,6 +24,7 @@
 </div>
 <div>
 <button class="button" type="submit">ログイン</button>
+<button class="button" type="submit" onclick="'register.php'">新規登録</button>
 </div>
 </form>
 </body>
