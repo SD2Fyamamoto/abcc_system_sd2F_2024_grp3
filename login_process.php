@@ -2,9 +2,9 @@
 session_start();
 // データベース接続情報
 $host = 'mysql305.phy.lolipop.lan'; // 変更する場合は適宜修正
-$dbname = 'LAA1557212-php2024'; // あなたのデータベース名
-$username = 'LAA1557212'; // あなたのデータベースユーザー名
-$password = 'Pass0521'; // あなたのデータベースパスワード
+$dbname = 'LAA1557201-php2024'; // あなたのデータベース名
+$username = 'LAA1557201'; // あなたのデータベースユーザー名
+$password = 'Pass0107'; // あなたのデータベースパスワード
 try {
    // PDOでデータベース接続
    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
@@ -32,7 +32,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($user) {
    // ログイン成功
    $_SESSION['user_name'] = $user['name']; // ユーザー名をセッションに保存
-   header('Location: product-list.php');
+   header('Location: product_list.php');
    exit;
 } else {
    // ログイン失敗

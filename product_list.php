@@ -2,13 +2,10 @@
 
 // データベース接続情報
 
-$host = 'localhost';
-
-$dbname = 'your_database';
-
-$username = 'your_username';
-
-$password = 'your_password';
+$host = 'mysql305.phy.lolipop.lan'; // 変更する場合は適宜修正
+$dbname = 'LAA1557201-php2024'; // あなたのデータベース名
+$username = 'LAA1557201'; // あなたのデータベースユーザー名
+$password = 'Pass0107'; // あなたのデータベースパスワード
 
 try {
 
