@@ -2,17 +2,20 @@
 
 // データベース接続情報
 
-$host = 'mysql305.phy.lolipop.lan'; // 変更する場合は適宜修正
-$dbname = 'LAA1557201-php2024'; // あなたのデータベース名
-$username = 'LAA1557201'; // あなたのデータベースユーザー名
-$password = 'Pass0107'; // あなたのデータベースパスワード
+$host = 'localhost';
+
+$dbname = 'your_database';
+
+$username = 'your_username';
+
+$password = 'your_password';
 
 try {
 
     // データベース接続
 
-    $pdo=new PDO('mysql:host=mysql304.phy.lolipop.lan;
-    dbname=LAA1557215-php2024;charset=utf8','LAA1557215','Pass0308');
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+
 } catch (PDOException $e) {
 
     echo "データベース接続エラー: " . $e->getMessage();
@@ -43,7 +46,12 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="header">
 <div class="account-info">
 <img src="./ASOLI.img/neko.png" alt="アカウント画像">
-<a href="mypage.php">アカウント</a>
+<a href="mypage2.php">アカウント</a>
+</div>
+<div class="search">
+<button class="search-button" onclick="window.location.href='search2.php'">
+<img src="./ASOLI.img/虫眼鏡.png" alt="検索アイコン">
+</button>
 </div>
 </div>
 <!-- タイトル -->
@@ -55,29 +63,29 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="product-item" data-id="<?= htmlspecialchars($product['id']) ?>" onclick="goToProductDetail(<?= htmlspecialchars($product['id']) ?>)">
 <img src="<?= htmlspecialchars($product['image_path']) ?>" alt="商品画像" class="product-image">
 <div class="product-info">
-<div>カテゴリー：<?= htmlspecialchars($product['category']) ?></div>
-<div>商品について：<?= htmlspecialchars($product['description']) ?></div>
-<div class="price"><?= number_format($product['price']) ?>円</div>
+<div>カテゴリー：<?= htmlspecialchars($product['goods_category']) ?></div>
+<div>商品について：<?= htmlspecialchars($product['goods_detailis']) ?></div>
+<div class="price"><?= number_format($product['goods_price']) ?>円</div>
 </div>
 </div>
 <?php endforeach; ?>
 </div>
 <!-- フッターボタン -->
 <div class="footer">
-<button onclick="window.location.href='login.php'">ログイン画面へ</button>
-<button onclick="window.location.href='category_select.php'">カテゴリーで絞る</button>
+<button onclick="goToLogin()">ログイン画面へ</button>
+<button onclick="window.location.href='category_select2.php'">カテゴリーで絞る</button>
 </div>
 <script>
 
         function goToLogin() {
 
-            window.location.href = "login.php";
+            window.location.href = "login2.php";
 
         }
 
         function goToProductDetail(productId) {
 
-            window.location.href = `product-detail.php?id=${productId}`;
+            window.location.href = `product-detail2.php?id=${productId}`;
 
         }
 </script>
