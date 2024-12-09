@@ -1,42 +1,28 @@
 <?php
+
 // データベース接続情報
-$servername = "localhost";
-$username = "root"; // ユーザー名
-$password = ""; // パスワード
-$dbname = "asoli"; // データベース名
 
-// 接続
-$conn = new mysqli($servername, $username, $password, $dbname);
+$host = 'mysql:host=mysql304.phy.lolipop.lan';
 
-// 接続確認
-if ($conn->connect_error) {
-    die("接続失敗: " . $conn->connect_error);
-}
+$dbname = 'dbname=LAA1557215-php2024';
 
-// 商品IDをURLのクエリ文字列から取得
-$goods_id = isset($_GET['goods_id']) ? $_GET['goods_id'] : 1;
+$username = 'LAA1557215';
 
-// SQL実行
-$sql = "SELECT goods_name, goods_image, goods_category, goods_details, goods_price FROM goods WHERE goods_id = $goods_id";
-$result = $conn->query($sql);
+$password = 'Pass0308';
+try {
 
-if ($result->num_rows > 0) {
-    // データを取得
-    $row = $result->fetch_assoc();
-    $goods_name = $row['goods_name'];
-    $goods_image = $row['goods_image'];
-    $goods_category = $row['goods_category'];
-    $goods_details = $row['goods_details'];
-    $goods_price = $row['goods_price'];
-} else {
-    echo "商品が見つかりません。";
+    // データベース接続
+
+    $pdo=new PDO('mysql:host=mysql304.phy.lolipop.lan;
+    dbname=LAA1557215-php2024;charset=utf8','LAA1557215','Pass0308');
+} catch (PDOException $e) {
+
+    echo "データベース接続エラー: " . $e->getMessage();
+
     exit;
+
 }
-
-$conn->close();
 ?>
-
-<link rel="stylesheet" href="./CSS/style.css"/>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -45,14 +31,16 @@ $conn->close();
     <title>商品詳細</title>
 </head>
 <body>
-    <!-- 商品詳細 -->
+    <!-- Header -->
+    <div class="header">商品詳細</div>
+
+    <!-- 商品詳細情報 -->
     <div class="product-detail-container">
-        <img src="<?php echo $goods_image; ?>" alt="商品画像" class="product-image">
+        <img src="./ASOLI.img/ソファスク.png" alt="商品画像" class="product-image">
         <div class="product-info">
-            <div>カテゴリー：<?php echo $goods_category; ?></div>
-            <div>商品名：<?php echo $goods_name; ?></div>
-            <div>価格：<?php echo $goods_price; ?>円</div>
-            <div>商品説明：<?php echo $goods_details; ?></div>
+            <div>カテゴリー：ソファー</div>
+            <div>価格：44,570円</div>
+            <div>商品説明：座り心地の良いソファーです。</div>
         </div>
         <button class="back-button" onclick="goToProductList()">商品一覧画面へ戻る</button>
         <button onclick="window.location.href='purchase.php'">購入する</button>    
@@ -63,9 +51,8 @@ $conn->close();
     <div>お届け予定日 X月X日</div>
     <script>
         function goToProductList() {
-            window.location.href = "product-list.php";
+            window.location.href = "product_list.php";
         }
     </script>
 </body>
 </html>
-

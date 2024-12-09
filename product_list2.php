@@ -48,7 +48,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <a href="mypage2.php">アカウント</a>
 </div>
 <div class="search">
-<button class="search-button" onclick="window.location.href='search2.php'">
+<button class="search-button" onclick="window.location.href='category_select2.php'">
 <img src="./ASOLI.img/虫眼鏡.png" alt="検索アイコン">
 </button>
 </div>

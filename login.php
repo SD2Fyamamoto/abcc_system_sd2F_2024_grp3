@@ -7,13 +7,13 @@
 <title>ログイン</title>
 </head>
 <body>
-    <div class="asoli">
-        ASOLI
-    </div>
+<div class="asoli">
+       ASOLI
+</div>
 <div class="h1">
 <h1>ログイン</h1>
+<!-- ログイン用フォーム -->
 <form action="login_process.php" method="POST">
-</div>
 <div>
 <label for="mail">メールアドレス</label>
 <input class="input" type="email" id="mail" name="mail" required>
@@ -24,9 +24,15 @@
 </div>
 <div>
 <button class="button" type="submit">ログイン</button>
-<button class="button" type="submit" onclick="'register.php'">新規登録</button>
 </div>
 </form>
+<!-- 新規登録ボタン -->
+<div>
+<form action="register.php" method="GET">
+<button class="button" type="submit">新規登録</button>
+</form>
+</div>
+</div>
 </body>
 </html>
 <!--test同期-->

@@ -119,16 +119,16 @@
 
     <!-- フッターボタン -->
     <div class="footer">
-        <button onclick="window.location.href='product-list.html'">商品一覧へ</button>
+        <button onclick="window.location.href='product-list.php'">商品一覧へ</button>
     </div>
 
     <script>
         function goToLogin() {
-            window.location.href = "login.html";
+            window.location.href = "login.php";
         }
 
         function goToProductDetail() {
-            window.location.href = "product-detail.html";
+            window.location.href = "product-detail.php";
         }
     </script>
 </body>
