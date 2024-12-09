@@ -14,20 +14,16 @@
             <img src="./ASOLI.img/ジジ.png" alt="アカウント画像">
             <span>アカウント名</span>
         </div>
-        <div class="search">
-            <span>商品検索</span>
-            <img src="./ASOLI.img/虫眼鏡.png" alt="検索アイコン">
-        </div>
     </div>
 
     <!-- タイトル -->
-    <div class="title">ベッド</div>
+    <div class="title">ソファー・椅子</div>
 
     <!-- 商品リスト -->
     <div class="product-list-container">
         <p>商品をタップして詳細を表示</p>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/布団　スク.png" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/ソファスク.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：ソファー・椅子
                 </div>
@@ -36,7 +32,7 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/布団２.スクpng" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/椅子スク.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子</div>
                 <div>商品について：シンプルでどこにでも馴染む椅子</div>
@@ -44,7 +40,7 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/布団３スク.png" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/丸椅子スク.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：ベット</div>
                 <div>商品について：店長のイチオシ！！</div>
