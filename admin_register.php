@@ -27,15 +27,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // フォームデータの取得とバリデーション
 
-    $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_STRING);
+    $id = filter_input(INPUT_POST, 'id',);
 
     $password = $_POST['password'];
 
-    $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
+    $username = filter_input(INPUT_POST, 'name',);
 
     // 必須項目のチェック
 
-    if (!$id || !$password || !$username) {
+    if (!$id || !$password || !$name) {
 
         $error_message = "全ての項目を正しく入力してください。";
 
@@ -47,9 +47,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // データベースへの登録
 
-        $sql = "INSERT INTO asoli_manager (id, password, username) 
+        $sql = "INSERT INTO asoli_manager (id, password, name) 
 
-                VALUES (:id, :password, :username)";
+                VALUES (:id, :password, :name)";
 
         $stmt = $pdo->prepare($sql);
 
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 ':password' => $hashed_password,
 
-                ':username' => $username
+                ':name' => $name
 
             ]);
 
