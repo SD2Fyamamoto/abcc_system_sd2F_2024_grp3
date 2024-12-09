@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php if (!empty($error_message)): ?>
 <p class="error"><?= htmlspecialchars($error_message) ?></p>
 <?php endif; ?>
-<form action="manager_register.php" method="post">
+<form action="admin_login.php" method="post">
 <label>管理者ID</label>
 <input type="text" name="id" required>
 <label>パスワード</label>
