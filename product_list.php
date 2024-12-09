@@ -11,8 +11,8 @@ try {
 
     // データベース接続
 
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-
+    $pdo=new PDO('mysql:host=mysql304.phy.lolipop.lan;
+    dbname=LAA1557215-php2024;charset=utf8','LAA1557215','Pass0308');
 } catch (PDOException $e) {
 
     echo "データベース接続エラー: " . $e->getMessage();
@@ -64,8 +64,8 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 <!-- フッターボタン -->
 <div class="footer">
-<button onclick="goToLogin()">ログイン画面へ</button>
-<button onclick="window.location.href='category_select.php'">カテゴリーで絞る</button>
+<button onclick="window.location.href='login.php'">ログイン画面へ</button>
+<button onclick="window.location.href='category-select.php'">カテゴリーで絞る</button>
 </div>
 <script>
 
