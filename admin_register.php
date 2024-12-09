@@ -11,8 +11,9 @@ $username = 'LAA1557215';
 $password = 'Pass0308';
 
 try {
-    $pdo=new PDO('mysql:host=mysql304.phy.lolipop.lan;
-    dbname=LAA1557215-php2024;charset=utf8','LAA1557215','Pass0308');
+
+    $pdo = new PDO('mysql:host=mysql304.phy.lolipop.lan;dbname=LAA1557215-php2024;charset=utf8', $username, $password);
+
 } catch (PDOException $e) {
 
     echo "データベース接続エラー: " . $e->getMessage();
@@ -27,11 +28,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // フォームデータの取得とバリデーション
 
-    $id = filter_input(INPUT_POST, 'id',);
+    $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_STRING);
 
-    $password = $_POST['password'];
+    $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
-    $username = filter_input(INPUT_POST, 'name',);
+    $name = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 
     // 必須項目のチェック
 
@@ -47,9 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // データベースへの登録
 
-        $sql = "INSERT INTO asoli_manager (id, password, name) 
-
-                VALUES (:id, :password, :name)";
+        $sql = "INSERT INTO asoli_manager (id, password, name) VALUES (:id, :password, :name)";
 
         $stmt = $pdo->prepare($sql);
 
@@ -65,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             ]);
 
-            // 登録成功
+            // 登録成功時にログインページへリダイレクト
 
             header("Location: admin_login.php");
 
@@ -98,13 +97,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php if (!empty($error_message)): ?>
 <p class="error"><?= htmlspecialchars($error_message) ?></p>
 <?php endif; ?>
-<form action="admin_login.php" method="post">
-<label>管理者ID</label>
-<input type="text" name="id" required>
-<label>パスワード</label>
-<input type="password" name="password" required>
-<label>ユーザー名</label>
-<input type="text" name="username" required>
+<!-- 管理者登録フォーム -->
+<form action="" method="post">
+<label for="id">管理者ID</label>
+<input type="text" id="id" name="id" required>
+<label for="password">パスワード</label>
+<input type="password" id="password" name="password" required>
+<label for="username">ユーザー名</label>
+<input type="text" id="username" name="username" required>
 <!-- 登録ボタンとキャンセルボタン -->
 <button type="submit" class="register">登録</button>
 <button type="button" class="cancel" onclick="window.location.href='admin_login.php'">キャンセル</button>
