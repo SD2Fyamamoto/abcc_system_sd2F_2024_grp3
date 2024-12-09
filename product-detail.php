@@ -1,4 +1,3 @@
-//商品詳細画面(product-detail.html)のソースコード
 <!DOCTYPE html>
 <html lang="ja">
 <head>
