@@ -41,9 +41,9 @@
         <div class="product-item" onclick="goToProductDetail()">
             <img src="./ASOLI.img/丸椅子スク.png" alt="商品画像" class="product-image">
             <div class="product-info">
-                <div>カテゴリー：ソファー</div>
+                <div>カテゴリー：椅子</div>
                 <div>商品について：店長のイチオシ！！</div>
-                <div class="price">51,100円</div>
+                <div class="price">4,100円</div>
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
@@ -103,7 +103,7 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/sofa4.png" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/ソファー４.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子</div>
                 <div>商品について：カジュアルさとインダストリアな印象を併せ持つデザイン。</div>
