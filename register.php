@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <label>住所</label><br>
 <input class="input" type="text" name="address" required><br>
 <!-- 登録ボタンとキャンセルボタン -->
-<button class="button" type="submit" class="register">登録</button>
+<button class="button" type="submit" class="register" onclick="window.location.href='login.php'">登録</button>
 <button class="button" type="button" class="cancel" onclick="window.location.href='login.php'">キャンセル</button>
 </form>
 </body>
