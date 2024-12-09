@@ -13,10 +13,9 @@
     <div class="product-detail-container">
         <img src="./ASOLI.img/ソファスク.png" alt="商品画像" class="product-image">
         <div class="product-info">
-            <div>カテゴリー：XXXX</div>
-            <div>商品名：XXXX</div>
-            <div>価格：XXXX円</div>
-            <div>商品説明：ここに商品の詳細な説明を入力してください。</div>
+            <div>カテゴリー：ソファー</div>
+            <div>価格：44,570円</div>
+            <div>商品説明：座り心地の良いソファーです。</div>
         </div>
         <button class="back-button" onclick="goToProductList()">商品一覧画面へ戻る</button>
         <button onclick="window.location.href='purchase.php'">購入する</button>    
@@ -27,7 +26,7 @@
     <div>お届け予定日 X月X日</div>
     <script>
         function goToProductList() {
-            window.location.href = "product-list.php";
+            window.location.href = "product_list.php";
         }
     </script>
 </body>
