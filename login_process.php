@@ -1,13 +1,17 @@
 <?php
 session_start();
 // データベース接続情報
-$host = 'mysql305.phy.lolipop.lan'; // 変更する場合は適宜修正
-$dbname = 'LAA1557201-php2024'; // あなたのデータベース名
-$username = 'LAA1557201'; // あなたのデータベースユーザー名
-$password = 'Pass0107'; // あなたのデータベースパスワード
+$host = 'mysql:host=mysql304.phy.lolipop.lan';
+
+$dbname = 'dbname=LAA1557215-php2024';
+
+$username = 'LAA1557215';
+
+$password = 'Pass0308';
+
 try {
-   // PDOでデータベース接続
-   $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+    $pdo=new PDO('mysql:host=mysql304.phy.lolipop.lan;
+    dbname=LAA1557215-php2024;charset=utf8','LAA1557215','Pass0308');
 } catch (PDOException $e) {
    die("データベース接続失敗: " . $e->getMessage());
 }
