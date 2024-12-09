@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="https://via.placeholder.com/80" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/sofa2.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：ソファー</div>
                 <div>商品について：ワンルームにお住まいの方や、1人暮らしのお部屋にぴったりな幅約132cmサイズ。</div>
@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/isu2.jpg" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/isu2.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子</div>
                 <div>商品について：スリムに折りたためるので隙間にも収納しやすい</div>
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/sofa3.avif" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/sofa3.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：ソファー</div>
                 <div>商品について：手ざわりがやわらかく、ふんわりとした感触の起毛タイプの生地を使用。</div>
@@ -87,7 +87,7 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/sofa4.avif" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/sofa4.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：ソファー</div>
                 <div>商品について：ハイバックタイプのコンパクトリクライニングソファです。</div>
@@ -95,7 +95,7 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/isu3.jpg" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/isu3.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子</div>
                 <div>商品について：天然木フレームと高機能PVCが調和したチェア</div>
@@ -103,7 +103,7 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/isu4.jpg" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/sofa4.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子</div>
                 <div>商品について：カジュアルさとインダストリアな印象を併せ持つデザイン。</div>
