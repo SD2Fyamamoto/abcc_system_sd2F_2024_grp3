@@ -47,14 +47,6 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/ダイニングチェア.png" alt="商品画像" class="product-image">
-            <div class="product-info">
-                <div>カテゴリー：椅子</div>
-                <div>商品について：カーブのついたラバーウッドの幅広な背もたれが、心地よくしっかりと支えます。</div>
-                <div class="price">8,500円</div>
-            </div>
-        </div>
-        <div class="product-item" onclick="goToProductDetail()">
             <img src="./ASOLI.img/オフィスチェア.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子</div>
