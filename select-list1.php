@@ -114,7 +114,7 @@
 
     <!-- フッターボタン -->
     <div class="footer">
-        <button onclick="window.location.href='product-list.php'">商品一覧へ</button>
+        <button onclick="window.location.href='product_list.php'">商品一覧へ</button>
     </div>
 
     <script>

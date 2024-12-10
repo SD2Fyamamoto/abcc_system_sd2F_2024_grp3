@@ -14,10 +14,6 @@
             <img src="./ASOLI.img/ジジ.png" alt="アカウント画像">
             <span>アカウント名</span>
         </div>
-        <div class="search">
-            <span>商品検索</span>
-            <img src="./ASOLI.img/虫眼鏡.png" alt="検索アイコン">
-        </div>
     </div>
 
     <!-- タイトル -->
@@ -52,67 +48,43 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="https://via.placeholder.com/80" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/コンセント付きベッド.png" alt="商品画像" class="product-image">
             <div class="product-info">
-                <div>カテゴリー：XXXX</div>
-                <div>商品について：～～～</div>
-                <div class="price">XXXX円</div>
+                <div>カテゴリー：ベッド</div>
+                <div>商品について：北欧調のシンプルデザイン！スペースを有効活用できる収納付き。</div>
+                <div class="price">29,990円</div>
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="https://via.placeholder.com/80" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/コンセント付きすのこベッド.png" alt="商品画像" class="product-image">
             <div class="product-info">
-                <div>カテゴリー：XXXX</div>
-                <div>商品について：～～～</div>
-                <div class="price">XXXX円</div>
+                <div>カテゴリー：ベッド</div>
+                <div>商品について：高さ３段階調整・棚・コンセント・ブックシェルフがついた便利なベッドです。</div>
+                <div class="price">15,990円</div>
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="https://via.placeholder.com/80" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/パイプベッド.png" alt="商品画像" class="product-image">
             <div class="product-info">
-                <div>カテゴリー：XXXX</div>
-                <div>商品について：～～～</div>
-                <div class="price">XXXX円</div>
+                <div>カテゴリー：ベッド</div>
+                <div>商品について：シンプルで余計なものがないベーシックタイプ。圧迫感なく配置ができます。</div>
+                <div class="price">10,990円</div>
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="https://via.placeholder.com/80" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/カウチベッド.png" alt="商品画像" class="product-image">
             <div class="product-info">
-                <div>カテゴリー：XXXX</div>
-                <div>商品について：～～～</div>
-                <div class="price">XXXX円</div>
+                <div>カテゴリー：ベッド</div>
+                <div>商品について：ユーズド感のある木目調と無機質なアイアンを合わせた、ヴィンテージスタイルのカウチベッド。</div>
+                <div class="price">44,990円</div>
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="https://via.placeholder.com/80" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/棚付きすのこベッド.png" alt="商品画像" class="product-image">
             <div class="product-info">
-                <div>カテゴリー：XXXX</div>
-                <div>商品について：～～～</div>
-                <div class="price">XXXX円</div>
-            </div>
-        </div>
-        <div class="product-item" onclick="goToProductDetail()">
-            <img src="https://via.placeholder.com/80" alt="商品画像" class="product-image">
-            <div class="product-info">
-                <div>カテゴリー：XXXX</div>
-                <div>商品について：～～～</div>
-                <div class="price">XXXX円</div>
-            </div>
-        </div>
-        <div class="product-item" onclick="goToProductDetail()">
-            <img src="https://via.placeholder.com/80" alt="商品画像" class="product-image">
-            <div class="product-info">
-                <div>カテゴリー：XXXX</div>
-                <div>商品について：～～～</div>
-                <div class="price">XXXX円</div>
-            </div>
-        </div>
-        <div class="product-item" onclick="goToProductDetail()">
-            <img src="https://via.placeholder.com/80" alt="商品画像" class="product-image">
-            <div class="product-info">
-                <div>カテゴリー：XXXX</div>
-                <div>商品について：～～～</div>
-                <div class="price">XXXX円</div>
+                <div>カテゴリー：ベッド</div>
+                <div>商品について：マットレスを置いても使いやすい高さの棚を備えた、頑丈設計のすのこベッド</div>
+                <div class="price">15,990円</div>
             </div>
         </div>
     </div>

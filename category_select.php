@@ -67,15 +67,16 @@
 <script>
        // フォーム送信先を動的に設定するスクリプト
        function submitForm() {
-           const form = document.getElementById('categoryForm');
-           const selectedCategory = document.querySelector('input[name="category"]:checked');
-           if (selectedCategory) {
-               form.action = selectedCategory.value; // 選択したラジオボタンの値をフォームのactionに設定
-               form.submit();
-           } else {
-               alert('カテゴリを選択してください。'); // 選択されていない場合の警告
-           }
-       }
+   const form = document.getElementById('categoryForm');
+   const selectedCategory = document.querySelector('input[name="category"]:checked');
+   if (selectedCategory) {
+       console.log("選択されたカテゴリ:", selectedCategory.value); // デバッグ
+       form.action = selectedCategory.value;
+       form.submit();
+   } else {
+       alert('カテゴリを選択してください。');
+   }
+}
 </script>
 </body>
 </html>

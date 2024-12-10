@@ -49,11 +49,6 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="account-info">
 <img src="./ASOLI.img/neko.png" alt="アカウント画像">
 <a href="mypage.php">アカウント</a>
-<div class="search">
-<button class="search-button" onclick="window.location.href='category_select.php'">
-<img src="./ASOLI.img/虫眼鏡.png" alt="検索アイコン">
-</button>
-</div>
 </div>
 </div>
 <!-- タイトル -->
