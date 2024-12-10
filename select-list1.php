@@ -47,23 +47,7 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/sofa1.png" alt="商品画像" class="product-image">
-            <div class="product-info">
-                <div>カテゴリー：ソファー</div>
-                <div>商品について：柔らかな印象を与えてくれるファブリック素材のソファです。</div>
-                <div class="price">39,990円</div>
-            </div>
-        </div>
-        <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/sofa2.png" alt="商品画像" class="product-image">
-            <div class="product-info">
-                <div>カテゴリー：ソファー</div>
-                <div>商品について：ワンルームにお住まいの方や、1人暮らしのお部屋にぴったりな幅約132cmサイズ。</div>
-                <div class="price">29,990円</div>
-            </div>
-        </div>
-        <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/isu.png" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/ダイニングチェア.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子</div>
                 <div>商品について：カーブのついたラバーウッドの幅広な背もたれが、心地よくしっかりと支えます。</div>
@@ -71,15 +55,47 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/isu2.png" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/オフィスチェア.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：椅子</div>
-                <div>商品について：スリムに折りたためるので隙間にも収納しやすい</div>
-                <div class="price">1,990円</div>
+                <div>背中にあわせたラインに加え、疲れやすい腰部分をサポートするクッション付き。</div>
+                <div class="price">7,990円</div>
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/sofa3.png" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/コンパクトカジュアルソファー.png" alt="商品画像" class="product-image">
+            <div class="product-info">
+                <div>カテゴリー：ソファー</div>
+                <div>商品について：省スペースで､シンプルデザインのカジュアルソファ</div>
+                <div class="price">17,990円</div>
+            </div>
+        </div>
+        <div class="product-item" onclick="goToProductDetail()">
+            <img src="./ASOLI.img/シェル型チェア.png" alt="商品画像" class="product-image">
+            <div class="product-info">
+                <div>カテゴリー：椅子</div>
+                <div>商品について：安定した座り心地のチェア。</div>
+                <div class="price">7,680円</div>
+            </div>
+        </div>
+        <div class="product-item" onclick="goToProductDetail()">
+            <img src="./ASOLI.img/2人掛けコンパクトソファー.png" alt="商品画像" class="product-image">
+            <div class="product-info">
+                <div>カテゴリー：ソファー</div>
+                <div>商品について：ソファと同生地のクッション(35×35cm)1個付き</div>
+                <div class="price">20,990円</div>
+            </div>
+        </div>
+        <div class="product-item" onclick="goToProductDetail()">
+            <img src="./ASOLI.img/木製チェア.png" alt="商品画像" class="product-image">
+            <div class="product-info">
+                <div>カテゴリー：ソファー</div>
+                <div>商品について：シンプルながら上品なデザインのチェア。</div>
+                <div class="price">19,690円</div>
+            </div>
+        </div>
+        <div class="product-item" onclick="goToProductDetail()">
+            <img src="./ASOLI.img/コンパクトソファー.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：ソファー</div>
                 <div>商品について：手ざわりがやわらかく、ふんわりとした感触の起毛タイプの生地を使用。</div>
@@ -87,27 +103,11 @@
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/sofa4.png" alt="商品画像" class="product-image">
+            <img src="./ASOLI.img/コーナーソファーセット.png" alt="商品画像" class="product-image">
             <div class="product-info">
                 <div>カテゴリー：ソファー</div>
-                <div>商品について：ハイバックタイプのコンパクトリクライニングソファです。</div>
-                <div class="price">21,990円</div>
-            </div>
-        </div>
-        <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/isu3.png" alt="商品画像" class="product-image">
-            <div class="product-info">
-                <div>カテゴリー：椅子</div>
-                <div>商品について：天然木フレームと高機能PVCが調和したチェア</div>
-                <div class="price">19,960円</div>
-            </div>
-        </div>
-        <div class="product-item" onclick="goToProductDetail()">
-            <img src="./ASOLI.img/ソファー４.png" alt="商品画像" class="product-image">
-            <div class="product-info">
-                <div>カテゴリー：椅子</div>
-                <div>商品について：カジュアルさとインダストリアな印象を併せ持つデザイン。</div>
-                <div class="price">50,490円</div>
+                <div>商品について：生地はサラッとした質感の素材。暮らしに心地よくなじむシンプルなデザインです。</div>
+                <div class="price">169,900円</div>
             </div>
         </div>
     </div>
