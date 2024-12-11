@@ -2,11 +2,13 @@
 
 // データベース接続情報
 
-$host = 'mysql:host=mysql304.phy.lolipop.lan;dbname=LAA1557215-php2024;charset=utf8';
+$host = 'mysql:host=mysql305.phy.lolipop.lan';
 
-$username = 'LAA1557215';
+$dbname = 'LAA1557234-php2024;charset=utf8';
 
-$password = 'Pass0308';
+$username = 'LAA1557234';
+
+$password = 'Pass1202';
 
 try {
 
