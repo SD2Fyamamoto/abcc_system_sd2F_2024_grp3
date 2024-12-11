@@ -1,28 +1,4 @@
-<?php
 
-// データベース接続情報
-
-$host = 'mysql:host=mysql304.phy.lolipop.lan';
-
-$dbname = 'dbname=LAA1557215-php2024';
-
-$username = 'LAA1557215';
-
-$password = 'Pass0308';
-try {
-
-    // データベース接続
-
-    $pdo=new PDO('mysql:host=mysql304.phy.lolipop.lan;
-    dbname=LAA1557215-php2024;charset=utf8','LAA1557215','Pass0308');
-} catch (PDOException $e) {
-
-    echo "データベース接続エラー: " . $e->getMessage();
-
-    exit;
-
-}
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -42,8 +18,8 @@ try {
             <div>価格：44,570円</div>
             <div>商品説明：座り心地の良いソファーです。</div>
         </div>
-        <button class="back-button" onclick="goToProductList()">商品一覧画面へ戻る</button>
-        <button onclick="window.location.href='purchase.php'">購入する</button>    
+        <button class="button" onclick="window.location.href='product-list.php'">商品一覧画面へ戻る</button>
+        <button class="button" onclick="window.location.href='purchase.php'">購入する</button>    
     </div>
     <br>
     <div>お届け先：福岡県福岡市博多区 博多駅南1-11-11</div>

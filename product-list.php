@@ -29,7 +29,7 @@
         <div class="product-item" data-id="001" onclick="goToProductDetail(10001)">
             <img src="./ASOLI.img/ソファスク.png" alt="商品画像" class="product-image">
             <div class="product-info">
-                <div>カテゴリー：椅子・ソファー</div>
+                <div>カテゴリー：ソファー</div>
                 <div>商品について：とても座り心地の良いソファーです。</div>
                 <div class="price">23,555円</div>
             </div>
@@ -37,7 +37,7 @@
         <div class="product-item" data-id="002" onclick="goToProductDetail(10002)">
             <img src="./ASOLI.img/椅子スク.png" alt="商品画像" class="product-image">
             <div class="product-info">
-                <div>カテゴリー：椅子・ソファー</div>
+                <div>カテゴリー：椅子</div>
                 <div>商品について：シンプルなデザインで老若男女おすすめです。</div>
                 <div class="price">1,980円</div>
             </div>
