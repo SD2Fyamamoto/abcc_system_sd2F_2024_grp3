@@ -13,11 +13,6 @@
             <img src="./ASOLI.img/neko.png" alt="アカウント画像">
             <a href="mypage.php">アカウント</a>
         </div>
-        <div class="search">
-            <button class="search-button" onclick="window.location.href='search.php'">
-                <img src="./ASOLI.img/虫眼鏡.png" alt="検索アイコン">
-            </button> 
-        </div>
     </div>
 
     <!-- タイトル -->

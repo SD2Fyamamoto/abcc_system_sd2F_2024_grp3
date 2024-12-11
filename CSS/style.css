@@ -45,6 +45,19 @@ body {
     cursor: pointer;
     text-align: center;
  }
+ button.p{
+   padding: 12px 25px;
+   font-size: 16px;
+   color: white;
+   background-color: blue;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin: 0 10px;
+ }
+ button:hover{
+   background-color: darkblue;
+ }
  button.red {
     background-color: red;
  }
@@ -83,7 +96,9 @@ body {
     margin-right: 15px;
  }
  .product-info {
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
  }
  .product-info .price {
     font-weight: bold;
@@ -91,13 +106,17 @@ body {
  /* 商品詳細 */
  .product-detail-container {
     width: 90%;
-    margin-top: 20px;
+    max-width: 500px;
+    margin-top: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
  }
  .product-detail-container img {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: auto;
     margin: 0 auto 15px;
     display: block;
  }
