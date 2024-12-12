@@ -26,6 +26,7 @@
     <!-- ボタン -->
     <div class="buttons-container">
         <button class="button" onclick="window.location.href='login.php'">ログアウト</button>
+        <button class="button" onclick="window.location.href='user.php'">更新</button>
         <button class="button" onclick="window.location.href='product-list.php'">戻る</button>
     </div>
 </body>
