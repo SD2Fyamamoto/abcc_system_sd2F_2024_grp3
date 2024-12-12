@@ -27,7 +27,7 @@
             <div class="product-info">
                 <div>カテゴリー：ソファー</div>
                 <div>商品について：座り心地の良いソファーです。</div>
-                <div class="price">44,750円</div>
+                <div class="price">23,555円</div>
             </div>
         </div>
         <div class="product-item" onclick="goToProductDetail()">

@@ -79,6 +79,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    'LAA1557234',
    'Pass1202' );
 
+   原野
+   $host = 'mysql:host=mysql304.phy.lolipop.lan';
+
+$dbname = 'dbname=LAA1557215-php2024';
+
+$username = 'LAA1557215';
+
+$password = 'Pass0308';
    
 
 
